@@ -1,0 +1,1 @@
+SELECT CONCAT(apellido1, ' ',apellido2, ' ',nombre1, ' ', nombre2) AS 'Director del Programa', nombre AS Programa FROM directores_programa d INNER JOIN programa p ON p.id = d.programa_id INNER JOIN directivos di ON di.id = d.directivos_id ORDER BY apellido1, apellido2, nombre1, nombre2

@@ -1,0 +1,1 @@
+SELECT CONCAT(apellido1, ' ',apellido2, ' ',nombre1, ' ', nombre2) AS Estudiante, nombre AS Asignatura, fecha AS 'Asistencia' FROM registro_asistencia r INNER JOIN horarios h ON h.id = r.horario_id INNER JOIN asignaturas a ON a.id = h.asignatura_id INNER JOIN estudiantes e ON e.id = r.estudiante_id ORDER BY apellido1, apellido2, nombre1, nombre2
